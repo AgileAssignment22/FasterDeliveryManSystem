@@ -15,7 +15,7 @@ import javax.swing.JOptionPane;
 
 /**
  *
- * @author Administrator
+ * @author SOH JIUN WEI
  */
 public class FoodMenu extends javax.swing.JFrame {
 
@@ -44,6 +44,7 @@ public class FoodMenu extends javax.swing.JFrame {
         jtaResults = new javax.swing.JTextArea();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("Food Menu");
 
         jLabel1.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jLabel1.setText("Food Menu");

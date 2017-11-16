@@ -9,7 +9,7 @@ import java.io.Serializable;
 
 /**
  *
- * @author Administrator
+ * @author SOH JIUN WEI
  */
 public class Food implements Serializable{
 String foodName;
