@@ -14,15 +14,19 @@ import java.io.Serializable;
 public class Food implements Serializable{
 String foodName;
 double foodPrice;
-
+String foodID;
     void getFoodName() {
         this.foodName = foodName;
     }
-    
+    void getFoodID() {
+        this.foodID = foodID;
+    }
     void getFoodPrice() {
         this.foodPrice = foodPrice;
     }
-    
+   String setFoodID(String id) {
+       return id;
+   }
    String setFoodName(String str) {
        return str;
    }
@@ -32,11 +36,16 @@ double foodPrice;
    }
    
    public String toString() {
-       return String.format("%-20s  RM%-10.2f", foodName, foodPrice);
+       return String.format("%s#%s#%.2f", foodID, foodName, foodPrice);
    }
-   public Food(String name,double price) {
+   public Food(String id, String name,double price) {
+       this.foodID = id;
        this.foodName = name;
        this.foodPrice = price;
+   }
+   
+   public Food() {
+       
    }
    
 }
